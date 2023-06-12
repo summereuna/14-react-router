@@ -1,15 +1,15 @@
-import { Outlet } from "react-router-dom";
 import MainNavigation from "../components/MainNavigation";
 
-const RootLayout = () => {
+function ErrorPage() {
   return (
     <>
       <MainNavigation />
       <main>
-        <Outlet />
+        <h1>에러 발생!</h1>
+        <p>페이지를 찾을 수 없습니다.</p>
       </main>
     </>
   );
-};
+}
 
-export default RootLayout;
+export default ErrorPage;
